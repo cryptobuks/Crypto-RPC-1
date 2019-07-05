@@ -1,7 +1,5 @@
 <?php
 
-namespace App\Support\Nano;
-
 class Client
 {
 
