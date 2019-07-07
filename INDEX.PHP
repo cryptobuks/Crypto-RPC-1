@@ -4,6 +4,9 @@
   
   require_once 'jsonRPCClient.php';
   echo "<script>console.log('Trying to connect')</script>";
+  
+  // Insert username & password (same as .conf file) and change PORT  (BTC = 8332)
+  
   $crypto = new jsonRPCClient('http://username:password@127.0.0.1:PORT/');
   
   // Show Wallet Info.
