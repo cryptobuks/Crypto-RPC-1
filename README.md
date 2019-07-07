@@ -1,2 +1,2 @@
 # Crypto-RPC
-Scripts for interacting with crypto nodes
+Scripts for interacting with crypto nodes / daemon
