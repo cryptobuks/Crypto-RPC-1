@@ -29,7 +29,7 @@ cat <<'EOF'
 EOF
 cat <<EOF
 Welcome to the AUTOMATED CRYPOCURRENCY INSTALLER
-1. By pressing 'y' you agree to run the bitcoin installation script to your system.
+1. By pressing 'y' you agree to run the crypto daemon installation script to your system.
 EOF
 
 read -p "Are you sure you want to continue? <y/N> " prompt
