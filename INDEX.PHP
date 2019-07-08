@@ -1,7 +1,6 @@
 <?php
 
 /*                                       
-Ƀitcoin
 The MIT License (MIT)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -27,7 +26,7 @@ THE SOFTWARE.
   require_once 'jsonRPCClient.php';
   echo "<script>console.log('Trying to connect')</script>";
   
-  // Insert username & password (same as .conf file) and change PORT  (BTC = 8332)
+  // Insert username & password (same as .conf file) and change PORT  (BTC = 8332 / TESTNET = 18333)
   
   $crypto = new jsonRPCClient('http://username:password@127.0.0.1:PORT/');
   
@@ -40,6 +39,7 @@ THE SOFTWARE.
   echo "</pre>";
   
   // Show Balance
+
   echo "<script>console.log('Trying to getbalance')</script>";
   echo "<h1>Balance</h1><pre>\n";
   print_r($crypto->getbalance()); 
