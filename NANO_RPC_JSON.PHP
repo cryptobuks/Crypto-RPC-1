@@ -1,6 +1,6 @@
 <?php
+// https://docs.nano.org/running-a-node/docker-management/#starting
 
-// RPC action filter 1.1 by renesq
 // Requires PHP >5.4.0 or PHP 7
 // Potential features to add: API tokens with special privileges, whitelisting and blacklisting
 
