@@ -1,21 +1,21 @@
 <?php
 // https://docs.nano.org/running-a-node/docker-management/#starting
-// 
+// https://1nano.co/support-the-network/
 
 /* INSTALL NANO DAEMON 
 root@localhost:~# sudo docker pull nanocurrency/nano
 Using default tag: latest
 latest: Pulling from nanocurrency/nano
-7b722c1070cd: Pull complete
-5fbf74db61f1: Pull complete
-ed41cb72e5c9: Pull complete
-7ea47a67709e: Pull complete
-a5a6a536174b: Pull complete
-050bfd447b0c: Pull complete
-e90a43ce8182: Pull complete
-107904a24a83: Pull complete
-50ecd36532f9: Pull complete
-d3cf15030749: Pull complete
+xxxxxxxxxxxx: Pull complete
+xxxxxxxxxxxx: Pull complete
+xxxxxxxxxxxx: Pull complete
+xxxxxxxxxxxx: Pull complete
+xxxxxxxxxxxx: Pull complete
+xxxxxxxxxxxx: Pull complete
+xxxxxxxxxxxx: Pull complete
+xxxxxxxxxxxx: Pull complete
+xxxxxxxxxxxx: Pull complete
+xxxxxxxxxxxx: Pull complete
 Digest: sha256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Status: Downloaded newer image for nanocurrency/nano:latest
 root@localhost:~# sudo docker run -d --restart unless-stopped -p 7075:7075/udp -p 7075:7075 -p [::1]:7076:7076 -v ~:/root nanocurrency/nano
