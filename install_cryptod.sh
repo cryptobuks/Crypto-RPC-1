@@ -24,7 +24,7 @@ cat <<'EOF'
                                                                                                                    
                         
                             Creator: WCRAMA                                                                                                                    
-                        -Find simple solutions-										
+                        -Find Simple Solutions-										
                     
 EOF
 cat <<EOF
@@ -77,7 +77,7 @@ then
   cd /Nano
   echo "sudo docker restart xxxxxxxxxxxx"
   echo "sudo docker exec xxxxxxxxxxxx rai_node --wallet_create"
-  echo "sudo docker exec 69848144a7c8 rai_node --account_create --wallet=xxxxxxxxxxxxxxxxxxxxxx"
+  echo "sudo docker exec xxxxxxxxxxxx rai_node --account_create --wallet=xxxxxxxxxxxxxxxxxxxxxx"
   echo "Finished... Check if node is running..."
   
   
