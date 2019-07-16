@@ -57,11 +57,12 @@ else
   echo "Cancelled"
 fi
 
-read -p "Install Ethereum ? <y/N> " prompt
+read -p "Install DOCKER + NANO ? <y/N> " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"|| $prompt == "Yes" ]]
 then
 
-  echo "Coming Soon..."
+  sudo apt install docker.io -y
+  docker pull nanocurrency/nano
 
 else
   echo "Cancelled"
