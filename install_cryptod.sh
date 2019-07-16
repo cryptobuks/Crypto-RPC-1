@@ -45,6 +45,15 @@ else
   echo "Cancelled"
 fi
 
+
+read -p "Install DOCKER ? <y/N> " prompt
+if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"|| $prompt == "Yes" ]]
+then
+sudo apt install docker.io -y
+else
+  echo "Cancelled"
+fi
+
 read -p "Install Bitcoin ? <y/N> " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "YES"|| $prompt == "Yes" ]]
 then
@@ -63,7 +72,15 @@ then
 
   sudo apt install docker.io -y
   docker pull nanocurrency/nano
-
+  sudo docker run -d --restart unless-stopped -p 7075:7075/udp -p 7075:7075 -p [::1]:7076:7076 -v ~:/root nanocurrency/nano
+  sudo docker ps
+  cd /Nano
+  echo "sudo docker restart xxxxxxxxxxxx"
+  echo "sudo docker exec xxxxxxxxxxxx rai_node --wallet_create"
+  echo "sudo docker exec 69848144a7c8 rai_node --account_create --wallet=xxxxxxxxxxxxxxxxxxxxxx"
+  echo "Finished... Check if node is running..."
+  
+  
 else
   echo "Cancelled"
 fi
