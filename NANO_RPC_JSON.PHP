@@ -3,7 +3,11 @@
 // https://1nano.co/support-the-network/
 
 /* INSTALL NANO DAEMON 
+
+root@localhost:~# sudo apt install docker.io
+
 root@localhost:~# sudo docker pull nanocurrency/nano
+
 Using default tag: latest
 latest: Pulling from nanocurrency/nano
 xxxxxxxxxxxx: Pull complete
