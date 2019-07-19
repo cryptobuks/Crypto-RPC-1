@@ -75,9 +75,15 @@ then
   sudo docker run -d --restart unless-stopped -p 7075:7075/udp -p 7075:7075 -p [::1]:7076:7076 -v ~:/root nanocurrency/nano
   sudo docker ps
   cd /Nano
+  echo "Step 1 - RESTART DOCKER ID"
   echo "sudo docker restart xxxxxxxxxxxx"
+  echo " "
+  echo "Step 2 - CREATE WALLET"
   echo "sudo docker exec xxxxxxxxxxxx rai_node --wallet_create"
+  echo " "
+  echo "Step 3 - CREATE WALLET ADDRESS"
   echo "sudo docker exec xxxxxxxxxxxx rai_node --account_create --wallet=xxxxxxxxxxxxxxxxxxxxxx"
+  echo " "
   echo "Finished... Check if node is running..."
   
   
