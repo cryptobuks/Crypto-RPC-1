@@ -48,28 +48,49 @@ root@localhost:~/Nano# curl -g -d '{ "action": "block_count" }' '[::1]:7076'
 }
 root@localhost:~/Nano#
 
+********* EXTRA TEST CONTENT *********
+
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL, '[::1]:7076');	//Localhost Port 7076
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, "{ \"action\": \"block_count\"}");	// This is the RPC command
+curl_setopt($ch, CURLOPT_POST, 1);
+
+$headers = array();
+$headers[] = 'Content-Type: application/x-www-form-urlencoded';
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+$result = curl_exec($ch);
+if (curl_errno($ch)) {
+    echo 'Error:' . curl_error($ch);
+}
+curl_close($ch);
+
+
+Simple test script, returns version. 
+Save this script as api.php and create index.php with <btn id="version"></btn>
+
+	$("#version").click(function (e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "/api.php",
+			data: JSON.stringify({ 
+			"action": "version" 
+			}),
+			success: function(result) {
+			alert(result);
+			console.log(result);
+			},
+			error: function(result) {
+			alert(result);
+			console.log(result);
+			}
+		});
+	});
+
 */
-
-// Simple test script, return block_count 
-
-//$ch = curl_init();
-//
-//curl_setopt($ch, CURLOPT_URL, '[::1]:7076');	//Localhost Port 7076
-//curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-//curl_setopt($ch, CURLOPT_POSTFIELDS, "{ \"action\": \"block_count\"}");	// This is the RPC command
-//curl_setopt($ch, CURLOPT_POST, 1);
-//
-//$headers = array();
-//$headers[] = 'Content-Type: application/x-www-form-urlencoded';
-//curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-//
-//$result = curl_exec($ch);
-//if (curl_errno($ch)) {
-//    echo 'Error:' . curl_error($ch);
-//}
-//curl_close($ch);
-
-
 
 
 $node = 'http://104.167.109.70:7076';
